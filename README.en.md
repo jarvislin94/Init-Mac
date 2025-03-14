@@ -1,11 +1,11 @@
-# 🚀 Init-Mac
+# 🚀 MacDevKit
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/12573233/236685567-5b4c9ae5-f222-4fdb-b1bf-b536d2cc0c0c.png" alt="Init-Mac Logo" width="200">
+  <img src="https://user-images.githubusercontent.com/12573233/236685567-5b4c9ae5-f222-4fdb-b1bf-b536d2cc0c0c.png" alt="MacDevKit Logo" width="200">
 </p>
 
 <p align="center">
-  <strong>The Ultimate Script for Setting Up macOS Development Environment in One Click</strong>
+  <strong>The Ultimate Toolkit for Setting Up macOS Development Environment in One Click</strong>
 </p>
 
 <p align="center">
@@ -19,8 +19,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/jarvislin94/Init-Mac/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/jarvislin94/Init-Mac" alt="License">
+  <a href="https://github.com/jarvislin94/MacDevKit/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/jarvislin94/MacDevKit" alt="License">
   </a>
   <img src="https://img.shields.io/badge/platform-macOS-lightgrey" alt="Platform">
   <img src="https://img.shields.io/badge/shell-bash-4EAA25" alt="Shell">
@@ -33,7 +33,7 @@
 
 ## ✨ Features
 
-Init-Mac is a comprehensive macOS development environment setup script designed for developers, capable of setting up a new Mac development environment in minutes.
+MacDevKit is a comprehensive macOS development environment setup toolkit designed for developers, capable of setting up a new Mac development environment in minutes.
 
 - 🚀 **One-Click Installation** - Set up all development tools and configurations with a single command
 - 🎨 **Beautiful Interface** - Colorful output and clear progress indicators
@@ -44,25 +44,25 @@ Init-Mac is a comprehensive macOS development environment setup script designed 
 - 🔒 **Secure and Reliable** - Uses official sources and secure installation methods
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/12573233/236685568-5b4c9ae5-f222-4fdb-b1bf-b536d2cc0c0d.gif" alt="Init-Mac Demo" width="600">
+  <img src="https://user-images.githubusercontent.com/12573233/236685568-5b4c9ae5-f222-4fdb-b1bf-b536d2cc0c0d.gif" alt="MacDevKit Demo" width="600">
 </p>
 
 ## 🔧 Installation
 
-Download and run Init-Mac with just one command:
+Download and run MacDevKit with just one command:
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/jarvislin94/Init-Mac/main/init.sh | bash
+curl -fsSL https://raw.githubusercontent.com/jarvislin94/MacDevKit/main/init.sh | bash
 ```
 
 Alternatively, you can download the script first and then run it:
 
 ```bash
 # Clone the repository
-git clone https://github.com/jarvislin94/Init-Mac.git
+git clone https://github.com/jarvislin94/MacDevKit.git
 
 # Navigate to the directory
-cd Init-Mac
+cd MacDevKit
 
 # Make the script executable
 chmod +x init.sh
@@ -85,7 +85,7 @@ The script displays colorful output, clearly indicating current progress and suc
 
 ## 🛠️ Included Tools
 
-Init-Mac includes the following development tools and applications:
+MacDevKit includes the following development tools and applications:
 
 ### Basic Tools
 - **Homebrew** - macOS package manager
