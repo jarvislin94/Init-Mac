@@ -27,6 +27,8 @@
   <img src="https://img.shields.io/badge/macOS-Monterey%20|%20Ventura%20|%20Sonoma-blue" alt="macOS">
 </p>
 
+*中文 | [English](README.en.md)*
+
 ---
 
 ## ✨ 特性
