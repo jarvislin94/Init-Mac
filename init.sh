@@ -14,22 +14,22 @@ NC='\033[0m' # No Color
 
 # Function to print section headers
 print_section() {
-    echo -e "\n${BLUE}==== $1 ====${NC}"
+    echo -e "\n${BLUE}==== $1 ====${NC}\n"
 }
 
 # Function to print success messages
 print_success() {
-    echo -e "${GREEN}✓ $1${NC}"
+    echo -e "${GREEN}✓ $1${NC}\n"
 }
 
 # Function to print error messages
 print_error() {
-    echo -e "${RED}✗ $1${NC}"
+    echo -e "${RED}✗ $1${NC}\n"
 }
 
 # Function to print info messages
 print_info() {
-    echo -e "${CYAN}ℹ $1${NC}"
+    echo -e "${CYAN}ℹ $1${NC}\n"
 }
 
 # Function to check if a command exists
@@ -42,17 +42,25 @@ confirm_step() {
     local step_name="$1"
     local step_description="$2"
     
-    echo -e "\n${YELLOW}▶ Step: ${step_name}${NC}"
-    echo -e "${CYAN}Description:${NC} ${step_description}"
+    echo -e "\n${YELLOW}▶ Step: ${step_name}${NC}\n"
+    echo -e "${CYAN}Description:${NC} ${step_description}\n"
     
-    echo -e "${YELLOW}Do you want to proceed with this step? (y/n)${NC}"
-    read -r response
-    if [[ $response =~ ^[Yy]$ ]]; then
-        return 0 # True - proceed with step
-    else
-        echo -e "${YELLOW}Skipping: ${step_name}${NC}"
-        return 1 # False - skip step
-    fi
+    while true; do
+        echo -e "${YELLOW}Do you want to proceed with this step? (y/n)${NC}"
+        read -r response
+        case "$response" in
+            [Yy]*)
+                return 0 # True - proceed with step
+                ;;
+            [Nn]*)
+                echo -e "${YELLOW}Skipping: ${step_name}${NC}"
+                return 1 # False - skip step
+                ;;
+            *)
+                echo -e "${RED}Please answer y (yes) or n (no).${NC}"
+                ;;
+        esac
+    done
 }
 
 # Welcome message
