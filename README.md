@@ -1,11 +1,11 @@
-# 🚀 Init-Mac
+# 🚀 MacDevKit
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/12573233/236685567-5b4c9ae5-f222-4fdb-b1bf-b536d2cc0c0c.png" alt="Init-Mac Logo" width="200">
+  <img src="https://user-images.githubusercontent.com/12573233/236685567-5b4c9ae5-f222-4fdb-b1bf-b536d2cc0c0c.png" alt="MacDevKit Logo" width="200">
 </p>
 
 <p align="center">
-  <strong>一键配置 macOS 开发环境的终极脚本</strong>
+  <strong>一键配置 macOS 开发环境的终极工具包</strong>
 </p>
 
 <p align="center">
@@ -19,8 +19,8 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/jarvislin94/Init-Mac/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/jarvislin94/Init-Mac" alt="License">
+  <a href="https://github.com/jarvislin94/MacDevKit/blob/main/LICENSE">
+    <img src="https://img.shields.io/github/license/jarvislin94/MacDevKit" alt="License">
   </a>
   <img src="https://img.shields.io/badge/platform-macOS-lightgrey" alt="Platform">
   <img src="https://img.shields.io/badge/shell-bash-4EAA25" alt="Shell">
@@ -33,7 +33,7 @@
 
 ## ✨ 特性
 
-Init-Mac 是一个全面的 macOS 开发环境配置脚本，专为开发者设计，可以在几分钟内完成新 Mac 的开发环境设置。
+MacDevKit 是一个全面的 macOS 开发环境配置工具包，专为开发者设计，可以在几分钟内完成新 Mac 的开发环境设置。
 
 - 🚀 **一键安装** - 一个命令设置所有开发工具和配置
 - 🎨 **美观的界面** - 彩色输出和清晰的进度指示
@@ -44,25 +44,25 @@ Init-Mac 是一个全面的 macOS 开发环境配置脚本，专为开发者设�
 - 🔒 **安全可靠** - 使用官方源和安全的安装方法
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/12573233/236685568-5b4c9ae5-f222-4fdb-b1bf-b536d2cc0c0d.gif" alt="Init-Mac Demo" width="600">
+  <img src="https://user-images.githubusercontent.com/12573233/236685568-5b4c9ae5-f222-4fdb-b1bf-b536d2cc0c0d.gif" alt="MacDevKit Demo" width="600">
 </p>
 
 ## 🔧 安装
 
-只需一行命令即可下载并运行 Init-Mac：
+只需一行命令即可下载并运行 MacDevKit：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/jarvislin94/Init-Mac/main/init.sh | bash
+curl -fsSL https://raw.githubusercontent.com/jarvislin94/MacDevKit/main/init.sh | bash
 ```
 
 或者，您也可以先下载脚本，然后再运行：
 
 ```bash
 # 克隆仓库
-git clone https://github.com/jarvislin94/Init-Mac.git
+git clone https://github.com/jarvislin94/MacDevKit.git
 
 # 进入目录
-cd Init-Mac
+cd MacDevKit
 
 # 赋予执行权限
 chmod +x init.sh
@@ -85,7 +85,7 @@ chmod +x init.sh
 
 ## 🛠️ 包含工具
 
-Init-Mac 包含以下开发工具和应用程序：
+MacDevKit 包含以下开发工具和应用程序：
 
 ### 基础工具
 - **Homebrew** - macOS 包管理器
