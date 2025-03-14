@@ -45,22 +45,16 @@ confirm_step() {
     echo -e "\n${YELLOW}▶ Step: ${step_name}${NC}\n"
     echo -e "${CYAN}Description:${NC} ${step_description}\n"
     
-    while true; do
-        echo -e "${YELLOW}Do you want to proceed with this step? (y/n)${NC}"
-        read -r response
-        case "$response" in
-            [Yy]*)
-                return 0 # True - proceed with step
-                ;;
-            [Nn]*)
-                echo -e "${YELLOW}Skipping: ${step_name}${NC}"
-                return 1 # False - skip step
-                ;;
-            *)
-                echo -e "${RED}Please answer y (yes) or n (no).${NC}"
-                ;;
-        esac
-    done
+    local response=""
+    echo -e "${YELLOW}Do you want to proceed with this step? (y/n)${NC}"
+    read -r response
+    
+    if [[ "$response" =~ ^[Yy] ]]; then
+        return 0 # True - proceed with step
+    else
+        echo -e "${YELLOW}Skipping: ${step_name}${NC}"
+        return 1 # False - skip step
+    fi
 }
 
 # Welcome message
